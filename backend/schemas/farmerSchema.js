@@ -11,7 +11,13 @@ const farmerSchema = new mongoose.Schema({
 
   // For password reset
   reset_token: { type: String, default: null },
-  reset_token_expiry: { type: Date, default: null }
+  reset_token_expiry: { type: Date, default: null },
+
+  // Array of query references
+  queries: [{
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'Query'
+  }]
 }, { timestamps: true });
 
 module.exports = mongoose.model('Farmer', farmerSchema);

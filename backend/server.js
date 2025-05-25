@@ -13,9 +13,8 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// Serve static files for profile and expense images
-app.use('/profile-image', express.static(path.join(__dirname, 'uploads')));
-
+// Serve static files for audio and images
+app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 // Routes
 app.use('/', routes);
 
