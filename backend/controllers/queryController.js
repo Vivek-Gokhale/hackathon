@@ -113,4 +113,25 @@ const setQuery = async (req, res, next) => {
   }
 };
 
-module.exports = { addQuery, setQuery };
+const answerQuery = async (req, res, next) => {
+  const { queryId, expertId, queryAnswer } = req.body;
+
+  try {
+    // Validate inputs
+    if (!queryId || !expertId || !queryAnswer) {
+      return res.status(400).json({ message: "queryId, expertId, and queryAnswer are required" });
+    }
+
+    const updatedQuery = await queryModel.answerFarmerQuery({ queryId, expertId, queryAnswer });
+
+    res.status(200).json({
+      message: "Query successfully answered by expert",
+      query: updatedQuery
+    });
+  } catch (error) {
+    console.error("Error in answering query", error);
+    next(error); // Forward error to error-handling middleware
+  }
+};
+
+module.exports = { addQuery, setQuery, answerQuery };

@@ -42,6 +42,10 @@ const querySchema = new mongoose.Schema({
     min: 1,
     max: 5,
     default: null
+  },
+  query_answer: {
+    type: String,
+    default: null
   }
 }, { timestamps: true });
 

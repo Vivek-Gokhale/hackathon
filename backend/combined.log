@@ -101,3 +101,6 @@
 {"level":"info","message":"MongoDB Atlas connection successful","timestamp":"2025-05-25T12:58:57.765Z"}
 {"level":"info","message":"Connected to MongoDB Atlas","timestamp":"2025-05-25T12:58:57.768Z"}
 {"level":"info","message":"Server running on port 3000","timestamp":"2025-05-25T12:58:57.771Z"}
+{"level":"info","message":"MongoDB Atlas connection successful","timestamp":"2025-05-25T15:58:00.089Z"}
+{"level":"info","message":"Connected to MongoDB Atlas","timestamp":"2025-05-25T15:58:00.093Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-05-25T15:58:00.097Z"}
