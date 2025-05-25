@@ -43,4 +43,35 @@ const assignQuery = async ({ queryId, expertId }) => {
   }
 };
 
-module.exports = { createQuery, assignQuery };
+const answerFarmerQuery = async ({ queryId, expertId, queryAnswer }) => {
+  try {
+    // Step 1: Find and update the query with the answer, status, and solved_date
+    const updatedQuery = await Query.findByIdAndUpdate(
+      queryId,
+      {
+        expertId,
+        query_answer: queryAnswer,
+        status: 'resolved',
+        solved_date: new Date()
+      },
+      { new: true }
+    );
+
+    if (!updatedQuery) {
+      throw new Error('Query not found');
+    }
+
+    // Optional Step 2: Ensure the expert exists (only if needed)
+    const expert = await Expert.findById(expertId);
+    if (!expert) {
+      throw new Error('Expert not found');
+    }
+
+    return { updatedQuery };
+  } catch (error) {
+    console.error('Error answering query:', error);
+    throw error;
+  }
+};
+
+module.exports = { createQuery, assignQuery, answerFarmerQuery };
