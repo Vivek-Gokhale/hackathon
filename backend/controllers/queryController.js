@@ -1,7 +1,7 @@
 const { spawn } = require('child_process');
 const path = require('path');
 const farmerModel = require('../models/farmerModel');
-const { createQuery } = require('../models/queryModel');
+const queryModel  = require('../models/queryModel');
 
 const runPythonScript = (args) => {
     return new Promise((resolve, reject) => {
@@ -78,7 +78,7 @@ const addQuery = async (req, res, next) => {
         };
 
         // Create query
-        const newQuery = await createQuery(queryData);
+        const newQuery = await queryModel.createQuery(queryData);
 
         // Update farmer document with query ID
         existingFarmer.queries.push(newQuery._id);
@@ -92,4 +92,25 @@ const addQuery = async (req, res, next) => {
     }
 };
 
-module.exports = { addQuery };
+const setQuery = async (req, res, next) => {
+  try {
+    const { queryId, expertId } = req.body;
+
+    if (!queryId || !expertId) {
+      return res.status(400).json({ message: "queryId and expertId are required" });
+    }
+
+    const { updatedQuery, updatedExpert } = await queryModel.assignQuery({ queryId, expertId });
+
+    res.status(200).json({
+      message: "Query successfully assigned to expert",
+      query: updatedQuery,
+      expert: updatedExpert
+    });
+  } catch (error) {
+    console.error("Error in assigning task", error);
+    next(error); // Pass to error-handling middleware
+  }
+};
+
+module.exports = { addQuery, setQuery };
