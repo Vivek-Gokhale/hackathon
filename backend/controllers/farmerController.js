@@ -9,58 +9,6 @@ const { OAuth2Client } = require('google-auth-library');
 const googleClient = new OAuth2Client("320422409970-ldsi80jm4d9jmc33dq0lql91jim97r2o.apps.googlefarmercontent.com");
 
 
-// const googleLogin = async (req, res, next) => {
-//     try {
-//         const { token } = req.body;
-//         if (!token) {
-//             return res.status(400).json({ message: 'Google token is required' });
-//         }
-
-//         const ticket = await googleClient.verifyIdToken({
-//             idToken: token,
-//             audience: config.googleClientId,
-//         });
-
-//         const payload = ticket.getPayload();
-//         const email = payload.email;
-//         const name = payload.name;
-
-//         // Check if farmer exists based on email
-//         let farmer = await farmerModel.getByEmail(email);
-
-//         // If the farmer does not exist, create a new farmer
-//         if (!farmer) {
-//             farmer = await farmerModel.create({
-//                 email,
-//                 password: null, // No password needed for Google login
-//             });
-
-//             // Ensure farmer.fid exists before calling addfarmerModelname
-//             if (farmer && farmer.id) {
-//                 await farmerModel.addfarmerName(farmer.id, name);
-//             } else {
-//                 throw new Error("farmerModel ID is missing after creation.");
-//             }
-//         }
-
-//         // Generate JWT token
-//         const authToken = jwt.sign({ farmerId: farmer.fid, email: farmer.email }, config.jwtSecret, {
-//             expiresIn: '1h',
-//         });
-
-//         res.json({
-//             token: authToken,
-//             farmerId: farmer.fid,
-//             farmerEmail: farmer.email,
-//             message: 'Google login successful',
-//         });
-//     } catch (error) {
-//         logger.error('Error with Google login', error);
-//         next(error);
-//     }
-// };
-
-
 
 
 const registerFarmer = async (req, res, next) => {

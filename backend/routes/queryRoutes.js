@@ -46,4 +46,6 @@ router.post('/add-query', upload.fields([
     }
 });
 
+router.post('/assign-query', queryController.setQuery);
+
 module.exports = router;

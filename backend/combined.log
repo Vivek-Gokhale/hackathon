@@ -91,3 +91,13 @@
 {"level":"info","message":"MongoDB Atlas connection successful","timestamp":"2025-05-25T12:28:40.967Z"}
 {"level":"info","message":"Connected to MongoDB Atlas","timestamp":"2025-05-25T12:28:40.971Z"}
 {"level":"info","message":"Server running on port 3000","timestamp":"2025-05-25T12:28:40.974Z"}
+{"level":"info","message":"MongoDB Atlas connection successful","timestamp":"2025-05-25T12:49:29.384Z"}
+{"level":"info","message":"Connected to MongoDB Atlas","timestamp":"2025-05-25T12:49:29.388Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-05-25T12:49:29.391Z"}
+{"level":"info","message":"MongoDB Atlas connection successful","timestamp":"2025-05-25T12:56:34.073Z"}
+{"level":"info","message":"Connected to MongoDB Atlas","timestamp":"2025-05-25T12:56:34.077Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-05-25T12:56:34.081Z"}
+{"level":"error","message":"TypeError: Cannot read properties of undefined (reading 'assignQuery')\n    at setQuery (D:\\hackathon\\backend\\controllers\\queryController.js:103:62)\n    at Layer.handleRequest (D:\\hackathon\\backend\\node_modules\\router\\lib\\layer.js:152:17)\n    at next (D:\\hackathon\\backend\\node_modules\\router\\lib\\route.js:157:13)\n    at Route.dispatch (D:\\hackathon\\backend\\node_modules\\router\\lib\\route.js:117:3)\n    at handle (D:\\hackathon\\backend\\node_modules\\router\\index.js:435:11)\n    at Layer.handleRequest (D:\\hackathon\\backend\\node_modules\\router\\lib\\layer.js:152:17)\n    at D:\\hackathon\\backend\\node_modules\\router\\index.js:295:15\n    at processParams (D:\\hackathon\\backend\\node_modules\\router\\index.js:582:12)\n    at next (D:\\hackathon\\backend\\node_modules\\router\\index.js:291:5)\n    at Function.handle (D:\\hackathon\\backend\\node_modules\\router\\index.js:186:3)","timestamp":"2025-05-25T12:58:08.582Z"}
+{"level":"info","message":"MongoDB Atlas connection successful","timestamp":"2025-05-25T12:58:57.765Z"}
+{"level":"info","message":"Connected to MongoDB Atlas","timestamp":"2025-05-25T12:58:57.768Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-05-25T12:58:57.771Z"}
