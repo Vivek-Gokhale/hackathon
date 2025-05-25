@@ -50,3 +50,33 @@
 {"level":"info","message":"MongoDB Atlas connection successful","timestamp":"2025-05-25T04:48:33.195Z"}
 {"level":"info","message":"Connected to MongoDB Atlas","timestamp":"2025-05-25T04:48:33.199Z"}
 {"level":"info","message":"Server running on port 3000","timestamp":"2025-05-25T04:48:33.203Z"}
+{"level":"info","message":"MongoDB Atlas connection successful","timestamp":"2025-05-25T09:13:02.313Z"}
+{"level":"info","message":"Connected to MongoDB Atlas","timestamp":"2025-05-25T09:13:02.316Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-05-25T09:13:02.320Z"}
+{"level":"info","message":"MongoDB Atlas connection successful","timestamp":"2025-05-25T09:49:50.967Z"}
+{"level":"info","message":"Connected to MongoDB Atlas","timestamp":"2025-05-25T09:49:51.000Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-05-25T09:49:51.011Z"}
+{"level":"error","message":"Error: ENOENT: no such file or directory, open 'D:\\hackathon\\backend\\storage\\images\\Screenshot (5)-1748166809961.png'","timestamp":"2025-05-25T09:53:29.975Z"}
+{"level":"info","message":"MongoDB Atlas connection successful","timestamp":"2025-05-25T09:56:03.445Z"}
+{"level":"info","message":"Connected to MongoDB Atlas","timestamp":"2025-05-25T09:56:03.449Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-05-25T09:56:03.456Z"}
+{"level":"error","message":"Error: Python script failed\n    at ChildProcess.<anonymous> (D:\\hackathon\\backend\\controllers\\queryController.js:23:16)\n    at ChildProcess.emit (node:events:519:28)\n    at maybeClose (node:internal/child_process:1105:16)\n    at ChildProcess._handle.onexit (node:internal/child_process:305:5)","timestamp":"2025-05-25T09:56:09.393Z"}
+{"level":"info","message":"MongoDB Atlas connection successful","timestamp":"2025-05-25T09:59:06.893Z"}
+{"level":"info","message":"Connected to MongoDB Atlas","timestamp":"2025-05-25T09:59:06.899Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-05-25T09:59:06.904Z"}
+{"level":"error","message":"Error: Python script failed\n    at ChildProcess.<anonymous> (D:\\hackathon\\backend\\controllers\\queryController.js:23:16)\n    at ChildProcess.emit (node:events:519:28)\n    at maybeClose (node:internal/child_process:1105:16)\n    at ChildProcess._handle.onexit (node:internal/child_process:305:5)","timestamp":"2025-05-25T09:59:10.056Z"}
+{"level":"info","message":"MongoDB Atlas connection successful","timestamp":"2025-05-25T10:00:09.155Z"}
+{"level":"info","message":"Connected to MongoDB Atlas","timestamp":"2025-05-25T10:00:09.159Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-05-25T10:00:09.163Z"}
+{"level":"error","message":"Error: Python script failed\n    at ChildProcess.<anonymous> (D:\\hackathon\\backend\\controllers\\queryController.js:23:16)\n    at ChildProcess.emit (node:events:519:28)\n    at maybeClose (node:internal/child_process:1105:16)\n    at ChildProcess._handle.onexit (node:internal/child_process:305:5)","timestamp":"2025-05-25T10:00:14.270Z"}
+{"level":"info","message":"MongoDB Atlas connection successful","timestamp":"2025-05-25T10:02:48.594Z"}
+{"level":"info","message":"Connected to MongoDB Atlas","timestamp":"2025-05-25T10:02:48.598Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-05-25T10:02:48.604Z"}
+{"level":"error","message":"ReferenceError: voiceScriptPath is not defined\n    at Object.addQuery (D:\\hackathon\\backend\\controllers\\queryController.js:53:62)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async D:\\hackathon\\backend\\routes\\queryRoutes.js:42:9","timestamp":"2025-05-25T10:02:51.596Z"}
+{"level":"info","message":"MongoDB Atlas connection successful","timestamp":"2025-05-25T10:04:27.502Z"}
+{"level":"info","message":"Connected to MongoDB Atlas","timestamp":"2025-05-25T10:04:27.506Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-05-25T10:04:27.509Z"}
+{"level":"error","message":"Error: Python script failed\n    at ChildProcess.<anonymous> (D:\\hackathon\\backend\\controllers\\queryController.js:23:16)\n    at ChildProcess.emit (node:events:519:28)\n    at maybeClose (node:internal/child_process:1105:16)\n    at ChildProcess._handle.onexit (node:internal/child_process:305:5)","timestamp":"2025-05-25T10:04:35.727Z"}
+{"level":"info","message":"MongoDB Atlas connection successful","timestamp":"2025-05-25T10:05:43.514Z"}
+{"level":"info","message":"Connected to MongoDB Atlas","timestamp":"2025-05-25T10:05:43.519Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-05-25T10:05:43.523Z"}
