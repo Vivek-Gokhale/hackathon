@@ -44,3 +44,9 @@
 {"level":"info","message":"Connected to MongoDB Atlas","timestamp":"2025-05-25T03:29:22.901Z"}
 {"level":"info","message":"Server running on port 3000","timestamp":"2025-05-25T03:29:22.905Z"}
 {"level":"info","message":"Password reset email sent successfully to","timestamp":"2025-05-25T03:29:34.042Z"}
+{"level":"info","message":"MongoDB Atlas connection successful","timestamp":"2025-05-25T04:46:59.829Z"}
+{"level":"info","message":"Connected to MongoDB Atlas","timestamp":"2025-05-25T04:46:59.835Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-05-25T04:46:59.838Z"}
+{"level":"info","message":"MongoDB Atlas connection successful","timestamp":"2025-05-25T04:48:33.195Z"}
+{"level":"info","message":"Connected to MongoDB Atlas","timestamp":"2025-05-25T04:48:33.199Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-05-25T04:48:33.203Z"}
